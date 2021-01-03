@@ -27,6 +27,7 @@ h2, p {
 }
 
 .profile-card-container {
+  height: 100vh; 
   background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
@@ -91,13 +92,4 @@ h2, p {
   margin-top: 4px;
   font-size: 0.5em;
   letter-spacing: 1px;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
