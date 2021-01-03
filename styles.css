@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* causes the element to maintain its width, no matter the amount of padding */
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(0, 0%, 30%);
+}
+
+h1, h2 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+h2, p {
+  font-weight: 400;
+  color: hsl(0, 0%, 60%);
+}
+
+.top-box img {
+  margin-top: 85px;
+  border: 5px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.profile-card-container {
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  background-position: calc(60px - ((1440px - 100vw)/2)) -280px, calc(710px - ((1440px - 100vw)/2)) 380px;
+  background-size: 622px 622px, 622px 622px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  text-align:center;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 140px;
+  margin-bottom: 140px;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.top-box {
+  height: 140px;
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: repeat;
+}
+
+.personal-info p {
+  font-size: 0.7em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.personal-info {
+  height: 140px;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.name-age {
+  margin-top: 50px;
+  display: flex;
+}
+
+.age {
+  margin-left: 10px;
+}
+
+.stats-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.stats-info p {
+  margin-top: 4px;
+  font-size: 0.5em;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
