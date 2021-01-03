@@ -27,22 +27,21 @@ h2, p {
 }
 
 .profile-card-container {
-  height: 100vh; 
+  height: 100vh;
   background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
-  background-position: calc(60px - ((1440px - 100vw)/2)) -280px, calc(710px - ((1440px - 100vw)/2)) 380px;
-  background-size: 622px 622px, 622px 622px;
+  background-position: calc(-200px - ((1440px - 100vw)/2)) -480px, calc(670px - ((1440px - 100vw)/2)) 470px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
 .card {
+  margin: 140px 30px;
   text-align:center;
   background-color: hsl(0, 0%, 100%);
-  margin-top: 140px;
-  margin-bottom: 140px;
   width: 325px;
   display: flex;
   flex-direction: column;
@@ -92,4 +91,20 @@ h2, p {
   margin-top: 4px;
   font-size: 0.5em;
   letter-spacing: 1px;
+}
+
+
+@media only screen and (min-width: 961px) {
+  .profile-card-container {
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    background-position: calc(-280px - ((1440px - 100vw)/2)) -370px, calc(700px - ((1440px - 100vw)/2)) 510px;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0;
+    width: 350;
+  }
 }
